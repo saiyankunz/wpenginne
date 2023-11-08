@@ -69,7 +69,7 @@ export default function Home({ posts }: any) {
 	)
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	// Paste your GraphQL query inside of a gql tagged template literal
 	const GET_POSTS = gql`
 		query AllPostsQuery {

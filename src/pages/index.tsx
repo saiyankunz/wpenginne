@@ -67,7 +67,7 @@ export default function Home({ post }: any) {
 	)
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getServerSideProps() {
 	const GET_POST = gql`
 		query GetPostByURI($id: ID!) {
 			post(id: $id) {
